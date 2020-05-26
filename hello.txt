@@ -1,3 +1,4 @@
+nuinunjin   
 hi bro
 dont overwrite just attend using >>
 another line added with the help of nano since gedit dosent work on windows 
