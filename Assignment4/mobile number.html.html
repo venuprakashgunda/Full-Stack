@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function fn(){
+                var v1;
+                v1 = document.getElementById("id1").value;
+                if(/[6-9][0-9]{9}$|[0][6-9][0-9]{9}$|[+][9][1][6-9][0-9]{9}$/.test(v1))
+                {
+                    window.alert('satisfies');
+                }
+                else{
+                    window.alert('not satisfies');
+                    document.getElementById("id1").focus();
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+      
+        <input type="text" id = "id1"  placeholder="Enter mobile number"/><br />
+
+        <button type="button" onclick = "fn()"> check</button>
+    </body>
+</html>

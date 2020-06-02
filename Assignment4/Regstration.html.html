@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function fn(){
+                var v1;
+                var v2;
+                var v3=0;
+                var v4=0;
+                v1 = document.getElementById("id1").value;
+                v2 =document.getElementById("id2").value;
+                if(/^[A-z][a-z]{4,8}$/.test(v1))
+                {
+                    v3 = 1;
+                }
+                   
+                if(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(v2))
+                {
+                    v4 =1;
+                }
+                    
+                if(v3 == 1 && v4==1)
+                {
+                    window.alert('username and password fields satisfied');
+                }
+                else if(v3 ==1 && v4 ==0)
+                {
+                    window.alert('username satisfied password field not satisfied');
+                    document.getElementById("id2").focus();
+
+                }
+                else if(v3 ==0 && v4 ==1){
+                    window.alert('username not satisfiedsatisfied password field  satisfied');
+                    document.getElementById("id1").focus();
+                }
+                else{
+                    window.alert('username and password fields not satisfied');
+                    document.getElementById("id1").focus();
+                    document.getElementById("id2").focus();
+
+
+                }
+
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+      
+       User name : <input type="text" id = "id1" /><br />
+       Full name : <input type="text" id = "id1111" /><br />
+       Department : <input type="text" id = "id1111" /><br />
+       Address    : <textarea rows="1" cols="23"></textarea><br>
+       Password  : <input type="text" id = "id2" /><br />
+
+        <button type="button" onclick = "fn()"> check</button>
+    </body>
+</html>
