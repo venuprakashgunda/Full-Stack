@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>   <title> Date Of Birth</title>
+     <script>
+         function check(){
+         var d = /^(([0-2][0-9])|([3][0-1]))[/](([0][0-9])|([0][0-2]))[/]([1][9][0-9]{2})|([2][0-9]{3})$/;
+         var dob = document.getElementById("d1").value;
+         var yr = dob.split("/");
+        if(d.test(dob)){
+         if((2020-parseInt(yr[2]))>=18)
+         {
+             window.alert("Accepted");
+
+         }
+         else{
+             window.alert("Not Accepted");
+         }
+        }
+        else{
+            window.alert("Enter Correct Date(dd//mm//yy)");
+        }
+    }
+     </script>
+
+    
+</head>
+<body>
+    Date Of Birth<input type="text" placeholder="Enter Date Of Birth" id="d1"/>
+    <button type="button" onclick="check()">check</button>
+</body>
+</html>
