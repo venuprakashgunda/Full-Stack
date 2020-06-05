@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>LOGIN FORM</title>
+        <link href="sampleproj.css" rel="stylesheet"/>
+        <script>
+            function fn(){
+                var v1;
+                v1 = document.getElementById("id1").value;
+                if(v1 == "")
+                {
+                    window.alert('Feedback Form Not Filled');
+                }
+                else{
+                    window.alert('Thanks For the FeedBack');
+                    document.getElementById("id1").focus();
+                }
+            }
+            
+        </script>
+    </head>
+    <BODY>
+        
+        
+        <div class="a11">
+            <div class="a1">
+                <img src="i1.png" width="100px" height="100px"/> 
+            </div>
+            <div class="gitam">
+                <h3>CARZZ RENTALS</h3>
+            </div>
+            <div class="a2">
+                <img src="i1.png"  width="100px" height="100px"/> 
+            </div>
+        </div>
+        <div class="div1">
+            <a href="sampleproj.html">Home</a>
+            <a href="loginproj.html">Login</a>
+            <a href="registerproj.html">Register</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="CONTACTUS.HTML">Contact Us</a> 
+            <a href="Feedproj.html">FEEDBACK</a>
+           </div>
+        <table align="center" border="0.3px">
+            <tr>
+                <td>
+                <h1>FEEDBACK FORM</h1><br><br>
+               USER NAME: <br> <input type="text" id="txtusername" placeholder="Enter user name"><br>
+               CONTACT NUMBER:<br>
+               <input type="password" id = "txtpassword" placeholder="Enter Pass word"><br>
+               
+               Feedback: <br><textarea id="id1" placeholder="Enter Your FeedBack Here"></textarea>
+               <br>
+
+        
+               
+               <input type="button" id="id1" value="Submit" onclick="fn()"><pre style="display:inline-block">       </pre>
+               <input type="button" id="x" value="Cancel">
+           </td> </tr>
+        </table>
+    </BODY>
+</HTML>

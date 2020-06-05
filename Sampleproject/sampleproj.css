@@ -1,0 +1,71 @@
+.a11{
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    width: 94.3%;
+    position: relative;
+    border-bottom: medium;
+}
+a{
+    padding: 75px;
+    text-transform: uppercase;
+}
+.a1{
+    border: 2px solid grey;
+    float: left;;
+}
+.a2{
+    border: 2px solid grey;
+    float: right;
+}
+.gitam{
+    display: inline-block;
+    padding: 20px;
+}
+.div1{
+    border: 2px solid black;
+    width: 93%;
+    padding: 10px;
+}
+.bi{
+  
+    padding : 1px;
+    float: left;
+
+    padding-left: 10px;
+    
+
+}
+.c1{
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    width: 94.3%;
+    position: relative;
+    border-top: medium
+
+}
+.bt{
+    border: 0px solid black;
+    border-radius: 3px;
+    float: right;
+    padding: 100px ;  
+    padding-left: 250px;
+    padding-right: 200px;
+    
+    border-right: medium; 
+    border-top: medium;
+    border-bottom: medium;
+
+    
+    
+}
+.div11{
+    border: 2px solid black;
+    width: 93%;
+    padding: 10px;
+    margin : 10px;
+}
+input[button]{
+    color: blue;
+}

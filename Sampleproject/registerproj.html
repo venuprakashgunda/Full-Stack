@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title> REG FORM</title>
+        <link href="sampleproj.css" rel="stylesheet"/>
+        <script>
+            function ch(){
+                var z=0;
+            var v1=document.getElementById("id1").value;
+            var v2=document.getElementById("id2").value;
+            var v3 = document.getElementById("id3").value;
+            if(z == 0){
+         window.alert('Registration Success');
+
+     }
+     else{
+         window.alert('registration failed');
+     }
+            
+            if(/^[A-z][a-z]{4,8}$/.test(v1)){
+            
+            }
+            else{
+             z=1;
+               
+            }
+           
+            if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@$*]).{5,12}$/.test(v2){
+            
+
+
+            }
+            else{
+                window.alert('Password should contain alteast one special character,number,capital,small letter');
+            
+            }
+           
+            if(v2 == v3){
+        
+
+            }
+            else{
+                document.getElementById('lblError').innerHTML = "(Retype Password didnt match)";
+               
+               
+            }
+           
+            var v11;
+                v11 = document.getElementById("idmob").value;
+                if(/[6-9][0-9]{9}$|[0][6-9][0-9]{9}$|[+][9][1][6-9][0-9]{9}$/.test(v11))
+                {
+                    
+                    
+                }
+                else{
+                    window.alert('Enter Indian Mobile Number');
+                    document.getElementById("idmob").focus();
+                }
+            var d = /^(([0-2][0-9])|([3][0-1]))[/](([0][0-9])|([0][0-2]))[/]([1][9][0-9]{2})|([2][0-9]{3})$/;
+         var dob = document.getElementById("d1").value;
+         var yr = dob.split("/");
+        if(d.test(dob)){
+         if((2020-parseInt(yr[2]))>=18)
+         {
+
+         }
+         else{
+             window.alert("Age should be above 18");
+         }
+        }
+        else{
+            window.alert("Enter Correct Date(dd//mm//yy)");
+        }
+    }
+   
+        </script>
+        
+    </head>
+    <BODY>
+        <div class="a11">
+            <div class="a1">
+                <img src="i1.png" width="100px" height="100px"/> 
+            </div>
+            <div class="gitam">
+                <h3>CARZZ RENTALS</h3>
+            </div>
+            <div class="a2">
+                <img src="i1.png"  width="100px" height="100px"/> 
+            </div>
+        </div>
+        <div class="div1">
+            <a href="sampleproj.html">Home</a>
+            <a href="loginproj.html">Login</a>
+            <a href="registerproj.html">Register</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="CONTACTUS.HTML">Contact Us</a> 
+            <a href="Feedproj.html">Feedback</a>
+           </div>
+        <table align="center">
+            <tr>
+                <td>
+                <h1>REGISTRATION FORM </h1><br>
+                FIRST NAME:<br> 
+                <input type="text" id="txtfirstname" placeholder="Enter first name"><br>
+                SECOND NAME:<br> <input type="text" id="txtfirstname" placeholder="Enter last name"><br>
+                DOB:<br>       <input type="text" id="d1" placeholder="Enter Date of birth"><br>
+                EMAIL:<br> <input type="text" id = "txtemailid" placeholder="Enter Email ID"><br>
+                MOBILE NUMBER:<br> <input type="text" id = "idmob" placeholder="Enter Mobile number"><br>
+                GENDER:<br> <input type="text" id="txtgender" placeholder="Enter Gender"><br>
+                USER NAME:<br>
+                <input type="text" id="id1" placeholder="Enter username"><br>
+                CREATE PASSWORD:
+                <br> <input type="password" id = "id2" placeholder="Enter Pass word"><br>
+                RETYPE PASSWORD:<br>
+                <input type="password" id = "id3" placeholder="Retype Pass word"><br>
+                <span id="lblError" style="color: red;"></span> <br>
+                HOME LOCATION:<br> <textarea rows="2" cols="20" placeholder="Enter Home Address"></textarea><br>
+                <input type="button" id="submit" value="Submit" onclick="ch()"><pre style="display:inline-block">       </pre>
+                       
+                          <input type="button" id="submit" value="Cancel"  >
+               
+            </div>
+               
+           </td> </tr>
+        </table>
+    </BODY>
+</HTML>
