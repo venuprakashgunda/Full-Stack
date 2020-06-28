@@ -1,0 +1,105 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>REGISTRARTION VAL</title>
+        <link  rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/Jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#btnLogin").click(function(){
+
+                
+                var v1 = $("#id1").val();
+                var v2 = $("#id2").val();
+                var v3 = $("#id3").val();
+                var v4 = $("#id4").val();
+                var v5 = $("#id5").val();
+              if(/^[A-z][a-z]{4,8}$/.test(v1))
+              {
+                 
+                  $("#id1").addClass("test1");
+              }
+              else{
+                $("#id1").addClass("test");
+              }
+
+              if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@$*]).{5,12}$/.test(v2))
+              {    
+                  $("#id2").addClass("test1");
+                  
+              }
+              else{
+                $("#id2").addClass("test");
+              }
+
+              if(/^[a-zA-Z._0-9-]{6,12}[@][a-z]{3,15}[.][a-z]{2,6}$/.test(v3))
+              {
+                $("#id3").addClass("test1");
+              }
+              else{
+                $("#id3").addClass("test");
+              }
+
+              if(/[6-9][0-9]{9}$|[0][6-9][0-9]{9}$|[+][9][1][6-9][0-9]{9}$/.test(v4))
+              {
+                $("#id4").addClass("test1");
+              }
+              else{
+                $("#id4").addClass("test");
+              }
+              if(v5 == '')
+              {
+                 
+                  $("#id5").addClass("test");
+              }
+              else{
+                $("#id5").addClass("test1");
+
+              }
+            });
+              
+            });
+        </script>
+
+        <style>
+            .test{
+                border: 2px solid red;
+            }
+            .test1{
+                border: 2px solid lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align = center>REGISTRATION FORM</h1>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="Username">Username</label>
+                    <input type="text" class="form-control" id="id1" placeholder="Enter Username"/>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="id2" placeholder="Enter Password"/>
+                </div>
+                <div class="form-group">
+                    <label for="EmailId">Email Id</label>
+                    <input type="text" class="form-control" id="id3" placeholder="Enter Email id"/>
+                </div>
+                <div class="form-group">
+                    <label for="mobilenumber">MobileNUMBER</label>
+                    <input type="text" class="form-control" id="id4" placeholder="Enter mobilenumber"/>
+
+
+                </div>
+                <div class="form-group">
+                <label for="Address">Address</label><br>
+                <textarea rows="2" cols="152" id="id5"></textarea>
+            </div>
+                <button type="button" class="btn btn-primary" id="btnLogin">Sign In</button>
+            </form> 
+        </div>
+    </body>
+    </html>

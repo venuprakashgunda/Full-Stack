@@ -1,0 +1,41 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <link  rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/Jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#btnLogin").click(function(){
+
+                
+                var v1 = $("#id1").val();
+                var v2 = $("#id2").val();
+              if(v1 == '' && v2 == '')
+              {
+                $('input[type = Text]').css('border' , '2px solid red');
+                  window.alert("form is not filled");
+
+              }
+            });
+              
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="Username">Username</label>
+                    <input type="text" class="form-control" id="id1" placeholder="Enter Username"/>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="text" class="form-control" id="id2" placeholder="Enter Password"/>
+                </div>
+                <button type="button" class="btn btn-primary" id="btnLogin">Sign In</button>
+            </form> 
+        </div>
+    </body>
+    </html>
